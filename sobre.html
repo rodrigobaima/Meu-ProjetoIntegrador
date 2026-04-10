@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParaBook</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="container nav">
+            <h1 class="logo">ParaBook</h1>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="acesso-biblioteca.html">Meus Livros</a></li>
+                <li><a href="acesso-comunidade.html"> Comunidades</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <a href="/tela-login.html"><button class="login-btn">Entrar</button></a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <article class="container banner-content">
+            <h2>Conheça o ParaBook</h2>
+            <p>
+                Uma biblioteca digital criada para conectar pessoas ao conhecimento,
+                à leitura e ao desenvolvimento pessoal.
+            </p>
+        </article>
+    </section>
+
+    <!-- espaço para falar em tópicos sobre o projeto -->
+    <main class="container">
+        <section class="sobre-conteudo">
+
+            <div class="fade-section">
+            <h2>Quem somos</h2>
+            <p>
+                Somos estudantes do curso Full Stack do Senac de Belém-Pará,
+                Pensando em criar uma plataforma de leitura digital intuitiva, desenvolvemos o ParaBook.
+                Nosso primeiro projeto grande foi pensado para ser um ambiente de leitura e troca de experiências,
+                oferecendo uma facilidade na navegação e no acesso aos livros e comunidades.
+            </p>
+            </div>
+
+            <div class="fade-section">
+            <h2>Nossa missão</h2>
+            <p>
+                Incentivar o hábito da leitura de obras de dominio público,
+                criar uma comunidade que interaja entre si e permita que cada usuário sua própria biblioteca personalizada com seu gosto.
+            </p>
+            </div>
+
+            <div class="fade-section">
+            <h2>O que você encontra aqui</h2>
+            <ul>
+                <li><i class="fa-solid fa-book"></i> Acervo de Obras Clássicas</li>
+                <li><i class="fa-solid fa-feather-pointed"></i> Grandes Obras Literárias</li>
+                <li><i class="fa-solid fa-bookmark"></i> Biblioteca Particular Com Possibilidade de Leitura</li>
+            </ul>
+            </div>
+
+            <div class="fade-section">
+            <h2>Por que o ParaBook?</h2>
+            <p>
+                Acreditamos que por meio da leitura, e troca de experiências de obras clássicas, é possível
+                Crescer culturalmente e intelectualmente. Por conta disso, criamos essa plataforma digital que
+                Permite mais simplicidade e facilidade de uso.
+            </p>
+            </div>
+
+            <div class="fade-section">
+            <h2>Sobre o projeto</h2>
+            <p>
+                O ParaBook representa nosso projeto web, realizado em equipe,  
+                Servindo como prática do nosso aprendizado de boas práticas em HTML,
+                CSS, JavaScript e armazenamento de dados em uma aplicação real e escalável.
+            </p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h1 class="footer-titulo">&copy; ParaBook.</h1>
+        <span>2026. Todos os direitos reservados.</span>
+    </footer>
+
+    <!-- script que faz o efeito de scroll da página-->
+    <script>
+const sections = document.querySelectorAll(".fade-section");
+
+    function mostrarAoRolar() {
+        sections.forEach(section => {
+            const topoTela = window.innerHeight;
+            const topoElemento = section.getBoundingClientRect().top;
+
+            if (topoElemento < topoTela - 100) {
+                section.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", mostrarAoRolar);
+    window.addEventListener("load", mostrarAoRolar);
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ParaBook</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="container nav">
+                <h1 class="logo">ParaBook</h1>
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="acesso-biblioteca.html">Meus Livros</a></li>
+                    <li><a href="acesso-comunidade.html"> Comunidades</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="tela-login.html"><button class="login-btn">Entrar</button></a></li>
+                </ul>
+        
+            </nav>
+        </header>
+
+        <section class="banner">
+            <article class="container banner-content">
+                <h2>Bem-vindo ao ParaBook!</h2>
+                <p>Seu destino para encontrar e compartilhar livros incríveis.
+                    Aqui você encontrará uma ampla seleção de livros e muito mais!
+                    Explore nosso acervo e descubra novos títulos em diferentes categorias.
+                </p>
+            </article>
+        </section>
+
+            <!-- Container de Comunidades-->
+            <section class="container">
+    <h2>Comunidades</h2>
+
+    <div class="grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+        <img src="livros/capas_comunidades/imagemfilosofia.png" alt="Comunidade de Filosofia">
+
+        <div class="card-content">
+            <h3>Filosofia</h3>
+            <p>Discussões sobre ideias e pensamentos filosóficos.</p>
+
+<button onclick="entrarComunidade('filosofia')" class="btn">
+    Entrar
+</button>
+        </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+        <img src="livros/capas_comunidades/imagemliteratura.png" alt="Comunidade de Literatura">
+
+        <div class="card-content">
+            <h3>Literatura</h3>
+            <p>Compartilhe opiniões sobre livros e autores famosos.</p>
+
+<button onclick="entrarComunidade('literatura')" class="btn">
+    Entrar
+</button>
+        </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+        <img src="livros/capas_comunidades/imagemreligiosa.png.jpg" alt="Comunidade Religiosa">
+
+        <div class="card-content">
+            <h3>Religiosos</h3>
+            <p>Espaço para conteúdos e reflexões espirituais.</p>
+
+<button onclick="entrarComunidade('religioso')" class="btn">
+    Entrar
+</button>
+        </div>
+        </div>
+
+    </div>
+    </section>
+
+
+    <footer class="footer">
+        <h1 class="footer-titulo">&copy; ParaBook.</h1><span>2026. Todos os direitos reservados.</span>
+    </footer>
+
+    <script src="js/script.js"></script>
+    </body>
+</html>
