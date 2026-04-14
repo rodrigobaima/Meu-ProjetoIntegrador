@@ -1,0 +1,171 @@
+    /* Reset */
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Fundo */
+    body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #C1B59F 0%, #E6E2DB 100%);
+    padding: 20px;
+    }
+    /* Container principal */
+    .form-container{
+    position: relative;
+    width: 1100px;
+    height: 600px;
+    background: #E6E2DB;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    /* Lado da imagem */
+    .image-side{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    }
+    .image-side img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    }
+    /* Área dos formulários */
+    .form-side{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    padding: 50px;
+    background: #E6E2DB;
+    transition: transform 0.6s ease;
+    }
+    /* Formulários */
+    .login-form,
+    .register-form,
+    .forgot-form{
+    position: absolute;
+    width: calc(60% - 100px);
+    transition: transform 0.6s ease;
+    }
+    /* Estados iniciais */
+    .login-form{
+    transform: translateX(0);
+    }
+    .register-form{
+    transform: translateX(100%);
+    }
+    .forgot-form{
+    transform: translateX(100%);
+    }
+    /* Cadastro */
+    .form-container.active .login-form{
+    transform: translateX(100%);
+    }
+    .form-container.active .register-form{
+    transform: translateX(0);
+    }
+    /* Recuperação */
+    .form-container.forgot-active .login-form{
+    transform: translateX(100%);
+    }
+    .form-container.forgot-active .forgot-form{
+    transform: translateX(0);
+    }
+    /* Animação imagem */
+    .form-container.active .image-side,
+    .form-container.forgot-active .image-side{
+    transform: translateX(-40px) scale(1.02);
+    }
+    /* Título */
+    h2{
+    margin-bottom: 20px;
+    color: #303136;
+    text-align: center;
+    }
+    /* Caixa input */
+    .input-box{
+    margin-top: 20px;
+    position: relative;
+    }
+    /* Campo */
+    .input-box input{
+    width: 100%;
+    padding: 12px 15px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #303136;
+    font-size: 18px;
+    border-bottom: 2px solid #303136;
+    transition: 0.4s;
+    }
+    /* Focus */
+    .input-box input:focus{
+    border-bottom-color: #5C3B2E;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    /* Texto flutuante */
+    .input-box span{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #303136;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.4s;
+    transform: translateY(-50%);
+    }
+    /* Float label */
+    .input-box input:focus + span,
+    .input-box input:not(:placeholder-shown) + span{
+    top: -5px;
+    font-size: 12px;
+    color: #5C3B2E;
+    }
+    /* Links */
+    a{
+    color: #303136;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    a:hover{
+    color: #5C3B2E;
+    transition: 0.4s;
+    }
+    /* Conta */
+    .account-box{
+    text-align: center;
+    margin-top: 30px;
+    color: #303136;
+    font-size: 14px;
+    }
+    /* Botão */
+    .submit-btn{
+    width: 100%;
+    background: #5C3B2E;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    color: #E6E2DB;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 20px;
+    }
+    /* Hover */
+    .submit-btn:hover{
+    background: linear-gradient(90deg, #5C3B2E, #412a20);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+    }
