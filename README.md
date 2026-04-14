@@ -29,3 +29,6 @@ Foi criado um acervo de livros da biblioteca com os seguintes temas: **filosofia
 
 Primeira página quase finalizada. 
 Próximo passo: integrar as telas de login e detalhar o restante dos cards nas seções da Página inicial.
+
+
+aplique uma verificação de conta para saber se o usuario ja está cadastrado com o mesmo login ou não, e se ele digitou errado o email ou senha incorreto. Também faça com que apareçam icones como mostrar senha
