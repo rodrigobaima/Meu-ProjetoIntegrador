@@ -7,6 +7,7 @@
         <title>ParaBook</title>
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     </head>
 
     <body>
@@ -25,72 +26,133 @@
             </nav>
         </header>
 
-        <section class="banner">
-            <article class="container banner-content">
-                <h2>Bem-vindo ao ParaBook!</h2>
-                <p>Seu destino para encontrar e compartilhar livros incríveis.
-                    Aqui você encontrará uma ampla seleção de livros e muito mais!
-                    Explore nosso acervo e descubra novos títulos em diferentes categorias.
-                </p>
-            </article>
+        <!-- Container de Comunidades-->
+        <section class="pagina-comunidade">
+            <h2>Comunidades</h2>
+
+            <h3>Sinta-se livre para escolher uma comunidade para participar!</h3>
+
+            <p>Aqui você poderá fazer amigos e se informar sobre discussões relevantes ao seu interesse.</p>
+
+            <div class="grid">
+
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="livros/capas_comunidades/imagemfilosofia.png" alt="Comunidade de Filosofia">
+                    <div class="card-content">
+                        <h3>Filosofia</h3>
+                        <p>Discussões sobre ideias e pensamentos filosóficos.</p>
+                        <button onclick="entrarComunidade('filosofia')" class="btn">Entrar</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="livros/capas_comunidades/imagemliteratura.png" alt="Comunidade de Literatura">
+                    <div class="card-content">
+                        <h3>Literatura</h3>
+                        <p>Compartilhe opiniões sobre livros e autores famosos.</p>
+                        <button onclick="entrarComunidade('literatura')" class="btn">Entrar</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="livros/capas_comunidades/imagemreligiosa.png.jpg" alt="Comunidade Religiosa">
+                    <div class="card-content">
+                        <h3>Religiosos</h3>
+                        <p>Espaço para conteúdos e reflexões espirituais.</p>
+
+                        <button onclick="entrarComunidade('religioso')" class="btn">Entrar</button>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
-            <!-- Container de Comunidades-->
-            <section class="container">
-    <h2>Comunidades</h2>
+<footer>
+    <div id="footer_content">
 
-    <div class="grid">
+        <div id="footer-padrao">
+            <h1>&copy; ParaBook.</h1>
+            <p>O melhor site de livros.</p>
 
-        <!-- Card 1 -->
-        <div class="card">
-        <img src="livros/capas_comunidades/imagemfilosofia.png" alt="Comunidade de Filosofia">
+            <div id="footer_social_media">
+                <a href="#" class="footer-link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
 
-        <div class="card-content">
-            <h3>Filosofia</h3>
-            <p>Discussões sobre ideias e pensamentos filosóficos.</p>
+                <a href="#" class="footer-link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
 
-<button onclick="entrarComunidade('filosofia')" class="btn">
-    Entrar
-</button>
-        </div>
-        </div>
+                <a href="#" class="footer-link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
 
-        <!-- Card 2 -->
-        <div class="card">
-        <img src="livros/capas_comunidades/imagemliteratura.png" alt="Comunidade de Literatura">
-
-        <div class="card-content">
-            <h3>Literatura</h3>
-            <p>Compartilhe opiniões sobre livros e autores famosos.</p>
-
-<button onclick="entrarComunidade('literatura')" class="btn">
-    Entrar
-</button>
-        </div>
+            <p>2026. Todos os direitos reservados.</p>
         </div>
 
-        <!-- Card 3 -->
-        <div class="card">
-        <img src="livros/capas_comunidades/imagemreligiosa.png.jpg" alt="Comunidade Religiosa">
+        <div>
+            <h3>Conheça nosso Suporte ao Usuário</h3>
 
-        <div class="card-content">
-            <h3>Religiosos</h3>
-            <p>Espaço para conteúdos e reflexões espirituais.</p>
+            <p>Para dúvidas a respeito do site e problemas na leitura.</p>
 
-<button onclick="entrarComunidade('religioso')" class="btn">
-    Entrar
-</button>
+            <p><strong>Entre em contato conosco:</strong></p>
+
+            <ul class="footer-list">
+                <li>
+                    <a href="#" class="footer-link">
+                        Email: parabook@gmail.com
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">
+                        Telefone: (91) 8446-0404
+                    </a>
+                </li>
+            </ul>
+
+            <p>Segunda a Sexta, 8h às 18h.</p>
         </div>
+
+        <div id="footer_form">
+            <h3>Fale Conosco</h3>
+            <p>Envie sua mensagem diretamente pelo rodapé.</p>
+
+            <form action="#" method="post" class="contact-form">
+                <label for="footer-name">Nome</label>
+                <input type="text" id="footer-name" class="contact-input">
+
+                <label for="footer-email">E-mail</label>
+                <input type="email" id="footer-email" class="contact-input">
+
+                <label for="footer-message">Mensagem</label>
+                <textarea id="footer-message" class="contact-textarea" rows="5"></textarea>
+
+                <button type="submit" class="contact-btn">
+                    Enviar
+                </button>
+            </form>
+        </div>
+
+        <div id="footer_subscribe">
+            <h3>Teve uma experiência ruim?</h3>
+
+            <p>Coloque seu e-mail e a Ouvidoria entrará em contato.</p>
+
+            <div id="input_group">
+                <input type="email" id="feedback-email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
         </div>
 
     </div>
-    </section>
+</footer>
 
-
-    <footer class="footer">
-        <h1 class="footer-titulo">&copy; ParaBook.</h1><span>2026. Todos os direitos reservados.</span>
-    </footer>
-
-    <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
